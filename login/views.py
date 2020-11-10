@@ -10,7 +10,15 @@ from django.template import loader
 from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
 
+class IndexView(TemplateView):
+    template_name = "index.html"
+    
+    def get(self, request, *args, **kwargsuest):
 
+        context = {}
+
+        return render(request, self.template_name, context)
+    
 class LoginView(TemplateView):
     template_name = "profile.html"
     
