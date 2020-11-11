@@ -1,4 +1,5 @@
 # Ayomi
+#Python 3.8
 
 # Start app
 ```sh
